@@ -1,0 +1,36 @@
+/* @import url("https://cdn.syncfusion.com/ej2/material.css"); */
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.hidescroll::-webkit-scrollbar {
+  display: none;
+}
+.active svg {
+  color: rgba(52, 211, 153, 1);
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.comment:hover .button {
+  display: block;
+}
+.scroll-styled::-webkit-scrollbar-thumb {
+  background: rgba(52, 211, 153, 1);
+}
