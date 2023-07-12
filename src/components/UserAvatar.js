@@ -5,7 +5,7 @@ function UserAvatar(props) {
     <>
       {props.link ? (
         <img
-          src={"https://coursespec.000webhostapp.com/" + props.link}
+          src={"http://127.0.0.1:8000/storage/" + props.link}
           className="w-10 h-10 mr-3 object-cover rounded-full shadow"
         />
       ) : (

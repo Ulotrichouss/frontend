@@ -10,7 +10,7 @@ export function update(name, email) {
   try {
     axios({
       method: "POST",
-      url: "https://coursespec.000webhostapp.com/api/profile/edit",
+      url: "http://127.0.0.1:8000/api/profile/edit",
       headers: { "Content-Type": "application/json" },
       data: formData,
     });

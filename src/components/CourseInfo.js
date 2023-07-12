@@ -13,8 +13,8 @@ function CourseInfo(props) {
   return (
     <div className="p-3 shadow rounded-xl bg-white">
       <img
-        src={`https://coursespec.000webhostapp.com/${course.courseCover}`}
-        className="w-96 h-72 object-cover rounded-xl"
+        src={`http://127.0.0.1:8000/storage/${course.courseCover}`}
+        className=" object-cover rounded-xl"
       />
       <div className="space-y-3">
         <p className="text-2xl font-bold text-gray-600">{course.courseTitle}</p>

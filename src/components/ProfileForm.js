@@ -24,7 +24,7 @@ function ProfileForm() {
           />
         ) : (
           <img
-            src={"https://coursespec.000webhostapp.com/" + getUser().avatar}
+            src={"http://127.0.0.1:8000/storage/" + getUser().avatar}
             className="w-36 h-36 object-cover rounded-full border"
           />
         )}
