@@ -26,7 +26,7 @@ function Navbar() {
           <div className="hidden lg:block">
             <Link to="/">
               <img
-                src="https://coursespec.000webhostapp.com/public/favicon.png"
+                src="./favicon.png"
                 alt="logo"
                 className="w-10"
               />
