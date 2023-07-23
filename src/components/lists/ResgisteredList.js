@@ -12,7 +12,7 @@ function ResgisteredList(props) {
     getRegisteredList(props.id, setStudents);
     checkEnrolled(props.id, setEnrolled);
     setRefresh(false);
-  }, [refresh]);
+  }, [refresh, props.id]);
   return (
     <>
       <table class="mb-3 min-w-full max-h-64 divide-y divide-gray-200 bg-white border">

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^5.9.0",
+    "@coreui/icons": "^3.0.0",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
     "@syncfusion/ej2-react-calendars": "^19.3.44",
@@ -11,26 +11,27 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
+    "jslint": "^0.12.1",
     "moment": "^2.29.1",
+    "postcss-preset-env": "^7.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-js-pagination": "^3.0.2",
+    "react-player": "^2.11.0",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
+    "react-tag-autocomplete": "^6.3.0",
+    "react-tag-input": "^6.8.1",
     "react-toastify": "^8.1.0",
+    "redux": "^4.2.0",
+    "video-react": "^0.16.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -44,9 +45,11 @@
       "last 1 safari version"
     ]
   },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.8.8",
-    "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "tailwindcss": "^3.2.4"
   }
 }

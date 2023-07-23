@@ -34,6 +34,7 @@ function BoxNumber(props) {
         props.bg +
         "-300 shadow"
       }
+      style={{ backgroundColor: "limegreen"}}
     >
       <span className="text-6xl text-white">{number}</span>
       <span className="text-white font-medium uppercase">

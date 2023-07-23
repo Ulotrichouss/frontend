@@ -45,6 +45,16 @@ export function getNewCourses(setNewCourses) {
   });
 }
 
+export function getRecommendCourses(id, setRecommendCourses) {
+  axios({
+    method: "GET",
+    url: `http://localhost:5000/recommend/${id}`,
+    headers: { "Content-Type": "application/json" },
+  }).then((response) => {
+    setRecommendCourses(response.data);
+  });
+}
+
 export function createCourse(
   courseInfo,
   seletedImage,
@@ -181,3 +191,15 @@ export function getNumberCourse(setNumberCourse) {
     setNumberCourse(response.data.numberCourse);
   });
 }
+
+export function getSkill(setSkill) {
+  axios({
+    method: "GET",
+    url: `${Master_URL_API_Course}get-skill?token=${getToken()}`,
+    headers: { "Content-Type": "application/json" },
+  }).then((response) => {
+    setSkill(response.data);
+  });
+}
+
+// const api = 'http://127.0.0.1:5000/recommend/' + id;

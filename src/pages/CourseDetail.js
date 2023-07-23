@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import {
   AcademicCapIcon,
@@ -11,6 +11,9 @@ import CourseInfo from "../components/CourseInfo";
 import AssignmentList from "../components/lists/AssignmentList";
 import { isTeacher } from "../api/Session";
 import MaterialList from "../components/lists/MaterialList";
+import ReactPlayer from "react-player";
+import { getCourseInfo } from "../api/API_Courses";
+import UserAvatar from "../components/UserAvatar";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -18,6 +21,10 @@ function classNames(...classes) {
 
 function CourseDetail(props) {
   const courseId = props.match.params.id;
+  const [course, setCourse] = useState([]);
+  useEffect(() => {
+    getCourseInfo(courseId, setCourse);
+  }, []);
   return (
     <>
       <div className="container m-auto mt-5">
